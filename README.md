@@ -1,55 +1,47 @@
-# 🚀 Nova DSL Compiler
+# Nova DSL Compiler
 > A High-Performance, Modular Compiler Pipeline Targeting LLVM IR
 
-![C](https://img.shields.io/badge/Language-Pure%20C-blue.svg)
-![LLVM](https://img.shields.io/badge/Backend-LLVM%20IR-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Build](https://img.shields.io/badge/Build-CMake-orange.svg)
+![Language: Pure C](https://img.shields.io/badge/Language-Pure%20C-blue.svg)
+![Backend: LLVM IR](https://img.shields.io/badge/Backend-LLVM%20IR-green.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Build: CMake](https://img.shields.io/badge/Build-CMake-orange.svg)
 
-**Nova** is a custom statically-typed Domain-Specific Language (DSL) designed for systems programming. This repository implements a complete, end-to-end compiler built from scratch in C99, featuring a manual recursive-descent parser and a sophisticated code generation engine.
-
----
-
-## ✨ Key Features
-- **🎯 Full End-to-End Pipeline**: From raw source code to native `.exe` executables.
-- **🧱 Modular Architecture**: Clean separation between Lexical Analysis, Parsing (AST), Semantic Analysis, and Code Generation.
-- **💎 LLVM-Powered**: Generates standard LLVM Static IR, leveraging industry-leading optimizations.
-- **🛡️ Built-in Portability**: Intelligent "C-Fallback" mechanism allows compilation even on systems without LLVM installed (targets MSVC/Clang/GCC).
-- **📦 Advanced Types**: Native support for **Strings**, **Dynamic Arrays**, and **User I/O**.
+Nova is a custom statically-typed Domain-Specific Language (DSL) designed for systems programming. This repository implements a complete, end-to-end compiler built from scratch in C99, featuring a manual recursive-descent parser and a sophisticated code generation engine.
 
 ---
 
-## 🛠️ Compilation Pipeline
+## Project Overview
 
-Your code travels through 5 professional compilation phases:
+Nova is designed for developers who need a lightweight, C-like language with modern safety features. The compiler is modular and handles every phase of the compilation process manually, ensuring maximum control over performance and error reporting.
 
-```mermaid
-graph LR
-    A[Source .nv] --> B[Lexer]
-    B --> C[Parser / AST]
-    C --> D[Semantic Check]
-    D --> E[LLVM IR Gen]
-    E --> F[Native Executable]
-```
+### Compilation Phases
+
+| Phase | Responsibility | Output |
+| :--- | :--- | :--- |
+| **1. Lexical Analysis** | Manual Scanner | Token Stream |
+| **2. Parsing** | Recursive Descent | Abstract Syntax Tree (AST) |
+| **3. Semantic Analysis** | Symbol Table & Type Check | Verified Program State |
+| **4. Intermediate Code** | LLVM IR Generation | .ll Static IR File |
+| **5. Native Compilation** | LLVM Backend (llc) | Native .exe Binary |
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 | Folder | Description |
 | :--- | :--- |
-| `src/` | **Core Engine**: Lexer, Parser, AST nodes, and Codegen. |
-| `include/` | Public header definitions for compiler modularity. |
-| `tests/` | Comprehensive test suite featuring recursion, sorting, and math. |
-| `docs/` | Detailed academic reports and architecture specs. |
-| `build/` | CMake build artifacts and generated binaries. |
+| src/ | Core Engine: Lexer, Parser, AST nodes, and Codegen. |
+| include/ | Public header definitions for compiler modularity. |
+| tests/ | Comprehensive test suite featuring recursion, sorting, and arithmetic. |
+| docs/ | Detailed academic reports and architecture specs. |
+| build/ | CMake build artifacts and generated binaries. |
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Installation
-Ensure you have **CMake** and a **C Compiler** (MSVC/GCC) installed.
+Ensure you have CMake and a C Compiler (MSVC/GCC) installed.
 ```bash
 mkdir build && cd build
 cmake ..
@@ -72,8 +64,8 @@ Compile it:
 
 ---
 
-## 📥 Sample: Bubble Sort with Strings
-Nova is powerful enough to handle complex algorithms. Here is a snippet of a string-sorting program:
+## Sample: Bubble Sort with Strings
+Nova is powerful enough to handle complex algorithms. Below is a snippet of a string-sorting program demonstrating the language's capabilities:
 
 ```c
 fn main() -> int {
@@ -92,12 +84,13 @@ fn main() -> int {
 
 ---
 
-## 👤 Author
-**[Your Name Here]**  
-*Register No: [Your Register No]*  
-Course: Compiler Design  
+## Author Details
+**Name**: Syed Irfan M  
+**Register No**: RA2311026050121  
+**Course**: Compiler Design  
+**Date**: April 2026
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.

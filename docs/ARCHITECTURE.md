@@ -33,3 +33,7 @@ Once the AST is proven valid, the compiler traverses it one last time to emit LL
 The driver orchestrates the whole process.
 - After `codegen` produces `output.ll`, the driver invokes LLVM's `llc` tool via the system shell to compile the IR into a machine-specific object file (`output.o`).
 - Finally, it invokes `clang` (or `gcc`) to link the object file with the C standard library (giving us access to the OS entry point) and produce the final native executable (`.exe`).
+
+---
+**Author**: Syed Irfan M  
+**Register No**: RA2311026050121
