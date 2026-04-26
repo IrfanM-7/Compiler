@@ -1,0 +1,14 @@
+fn main() -> int {
+    print_string("Enter first number:");
+    let a: int = input_int();
+    
+    print_string("Enter second number:");
+    let b: int = input_int();
+    
+    let result: int = a * b;
+    
+    print_string("The result of multiplication is:");
+    print_int(result);
+    
+    return 0;
+}

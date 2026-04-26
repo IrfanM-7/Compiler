@@ -1,0 +1,25 @@
+# Build directories
+build/
+fallback_build/
+fallback_src/
+
+# Executables
+*.exe
+*.o
+*.obj
+*.ll
+*.c (except in src/)
+output.ll
+output.c
+factorial.exe
+multiply.exe
+bubble_sort.exe
+
+# VS Code
+.vscode/
+.gemini/
+.DS_Store
+
+# Temporary files
+temp/
+*.log

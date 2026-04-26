@@ -1,0 +1,38 @@
+fn main() -> int {
+    print_string("How many strings to sort?");
+    let n: int = input_int();
+    
+    let arr: string[] = allocate_string_array(n);
+    
+    let i: int = 0;
+    while (i < n) {
+        print_string("Enter string:");
+        arr[i] = input_string();
+        i = i + 1;
+    }
+    
+    print_string("Sorting...");
+    
+    let j: int = 0;
+    while (j < n) {
+        let k: int = 0;
+        while (k < (n - 1)) {
+            if (strcmp(arr[k], arr[k+1]) > 0) {
+                let temp: string = arr[k];
+                arr[k] = arr[k+1];
+                arr[k+1] = temp;
+            }
+            k = k + 1;
+        }
+        j = j + 1;
+    }
+    
+    print_string("Sorted results:");
+    let final_i: int = 0;
+    while (final_i < n) {
+        print_string(arr[final_i]);
+        final_i = final_i + 1;
+    }
+    
+    return 0;
+}
