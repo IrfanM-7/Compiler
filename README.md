@@ -83,8 +83,8 @@ Compile and execute:
 This project was developed as part of the **Compiler Design** curriculum to demonstrate the implementation of a full-scale language processor.
 
 ### 👤 Author Details
-- **Name**: Arun Rishvanth
-- **Register Number**: RA2311026050122
+- **Name**: Syed Irfan M & Arun Rishvanth
+- **Register Number**: RA2311026050121 & RA2311026050122
 - **University**: SRM Institute of Science and Technology
 - **Year**: 2026
 
@@ -95,5 +95,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 <p align="center">
-  Developed with ❤️ by <a href="https://github.com/arunrs2210">Arun Rishvanth</a>
+  Developed with ❤️ by <a href="https://github.com/IrfanM-7">Syed Irfan M</a> & <a href="https://github.com/arunrs2210">Arun Rishvanth</a>
 </p>

@@ -35,6 +35,6 @@ The compiler features a dual-backend strategy:
 The Nova Compiler successfully demonstrates a complete compilation lifecycle. By avoiding third-party generator tools (Flex/Bison), the project showcases a deep understanding of compiler internals and modular software architecture.
 
 ---
-**Author**: Arun Rishvanth  
-**Register No**: RA2311026050122  
+**Author**: Syed Irfan M & Arun Rishvanth  
+**Register No**: RA2311026050121 & RA2311026050122  
 **Date**: April 2026

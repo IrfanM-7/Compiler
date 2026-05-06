@@ -1,7 +1,7 @@
 # PROJECT REPORT: NOVA DSL COMPILER
 
-**Submitted by:** Arun Rishvanth  
-**Register No:** RA2311026050122  
+**Submitted by:** Syed Irfan M & Arun Rishvanth  
+**Register No:** RA2311026050121 & RA2311026050122  
 **Course:** Compiler Design  
 **Date:** April 2026  
 
@@ -104,4 +104,4 @@ The Nova DSL Compiler successfully demonstrates the power of a custom-built pipe
 ---
 **Date:** 26th April 2026  
 **Place:** University Campus  
-**Signature:** Arun Rishvanth  
+**Signature:** Syed Irfan M & Arun Rishvanth  

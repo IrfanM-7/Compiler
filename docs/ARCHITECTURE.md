@@ -35,5 +35,5 @@ The driver orchestrates the whole process.
 - Finally, it invokes `clang` (or `gcc`) to link the object file with the C standard library (giving us access to the OS entry point) and produce the final native executable (`.exe`).
 
 ---
-**Author**: Arun Rishvanth  
-**Register No**: RA2311026050122
+**Author**: Syed Irfan M & Arun Rishvanth  
+**Register No**: RA2311026050121 & RA2311026050122
